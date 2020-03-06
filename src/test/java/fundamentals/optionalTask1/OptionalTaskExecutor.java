@@ -11,10 +11,10 @@ public class OptionalTaskExecutor {
         int programNumber = scanner.nextInt();
         switch (programNumber){
             case 1:
-                getAverageNumberLength(num);
+                getNumbersInAscendingOrderOfLength(num);
                 break;
             case 2:
-                getNumbersInAscendingOrderOfLength(num);
+                getAverageNumberLength(num);
                 break;
             default:
                 System.out.println("Введено неверное число!");
@@ -99,7 +99,7 @@ public class OptionalTaskExecutor {
         {
             if(numbersLength[i][1]<length)
             {
-                System.out.println(numbersLength[i][0]+" "+numbersLength[i][1]);
+                System.out.println(numbersLength[i][0]+" длина - "+numbersLength[i][1]);
             }
         }
     }
